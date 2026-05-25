@@ -56,7 +56,7 @@ npm install
 
 # 3. Set up environment variable
 # Create a .env file in the root:
-echo "VITE_API_BASE_URL=https://crudcrud.com/api/eba06c98508e49d8b772027b76749344" > .env
+echo "VITE_API_BASE_URL=https://6a14429e6c7db8aac0542924.mockapi.io" > .env
 
 # 4. Start the development server
 npm run dev
@@ -70,7 +70,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 This project uses [CrudCrud.com](https://crudcrud.com) as a hosted mock REST API.
 
-**Base URL**: `https://crudcrud.com/api/eba06c98508e49d8b772027b76749344`
+**Base URL**: `https://6a14429e6c7db8aac0542924.mockapi.io`
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -91,7 +91,7 @@ This project uses [CrudCrud.com](https://crudcrud.com) as a hosted mock REST API
 }
 ```
 
-> **Note**: If the CrudCrud endpoint expires (free tier), you can get a new one at [crudcrud.com](https://crudcrud.com) and update `VITE_API_BASE_URL` in your `.env` file and Vercel environment variables.
+> **Note**: The MockAPI.io endpoint is free and persistent — data does not expire.
 
 ---
 
@@ -128,7 +128,7 @@ src/
 2. Go to [vercel.com](https://vercel.com) → **New Project** → Import your repo
 3. Add environment variable in Vercel:
    - **Key**: `VITE_API_BASE_URL`
-   - **Value**: `https://crudcrud.com/api/eba06c98508e49d8b772027b76749344`
+   - **Value**: `https://6a14429e6c7db8aac0542924.mockapi.io`
 4. Click **Deploy** ✅
 
 ---

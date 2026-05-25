@@ -7,27 +7,19 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
-// Normalize crudcrud's _id to id for consistency
-const normalize = (book) => {
-  if (!book) return book;
-  const { _id, ...rest } = book;
-  return { id: _id || book.id, ...rest };
-};
-
 export const getBooks = async () => {
   const response = await api.get("/books");
-  return response.data.map(normalize);
+  return response.data;
 };
 
 export const createBook = async (bookData) => {
   const response = await api.post("/books", bookData);
-  return normalize(response.data);
+  return response.data;
 };
 
 export const updateBook = async (id, bookData) => {
-  // crudcrud PUT doesn't return body, so we construct updated obj
-  await api.put(`/books/${id}`, bookData);
-  return { id, ...bookData };
+  const response = await api.put(`/books/${id}`, bookData);
+  return response.data;
 };
 
 export const deleteBook = async (id) => {
