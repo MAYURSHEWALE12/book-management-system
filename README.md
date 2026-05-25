@@ -1,6 +1,6 @@
 # 📚 BookShelf Manager
 
-A modern, full-featured **Book Management System** built with React + Vite. Manage your personal book collection with full CRUD operations, real-time search, genre filtering, and a stunning glassmorphism UI.
+A modern, full-featured **Book Management System** built with React + Vite. Manage your personal book collection with full CRUD operations, real-time search, genre filtering, and a clean editorial UI.
 
 🔗 **Live Demo**: [https://bookmanagementsystem-virid.vercel.app](https://bookmanagementsystem-virid.vercel.app)
 
@@ -32,7 +32,7 @@ A modern, full-featured **Book Management System** built with React + Vite. Mana
 | HTTP | Axios |
 | Notifications | React Hot Toast |
 | API | CrudCrud.com (hosted mock REST API) |
-| Styling | Vanilla CSS (dark glassmorphism) |
+| Styling | Vanilla CSS (clean editorial light theme) |
 | Fonts | Google Fonts (Inter + Playfair Display) |
 | Deployment | Vercel |
 
@@ -140,12 +140,6 @@ npm run dev      # Start dev server (localhost:5173)
 npm run build    # Build for production
 npm run preview  # Preview production build locally
 ```
-
----
-
-## 📸 Screenshots
-
-> _Book grid with glassmorphism cards, dark mode, genre badges_
 
 ---
 
