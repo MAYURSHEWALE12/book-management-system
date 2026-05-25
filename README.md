@@ -2,7 +2,7 @@
 
 A modern, full-featured **Book Management System** built with React + Vite. Manage your personal book collection with full CRUD operations, real-time search, genre filtering, and a stunning glassmorphism UI.
 
-🔗 **Live Demo**: _[Your Vercel URL here]_
+🔗 **Live Demo**: [https://bookmanagementsystem-virid.vercel.app](https://bookmanagementsystem-virid.vercel.app)
 
 ---
 
