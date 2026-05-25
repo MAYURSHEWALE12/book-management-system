@@ -7,19 +7,35 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
+// Normalize database records to ensure both id and _id are defined for absolute robustness
+const normalize = (book) => {
+  if (!book) return book;
+  const id = book.id || book._id;
+  return {
+    ...book,
+    id: id,
+    _id: id,
+  };
+};
+
 export const getBooks = async () => {
   const response = await api.get("/books");
-  return response.data;
+  const data = Array.isArray(response.data) ? response.data : [];
+  return data.map(normalize);
 };
 
 export const createBook = async (bookData) => {
   const response = await api.post("/books", bookData);
-  return response.data;
+  return normalize(response.data);
 };
 
 export const updateBook = async (id, bookData) => {
   const response = await api.put(`/books/${id}`, bookData);
-  return response.data;
+  // If the API returns an empty response (like CrudCrud PUT), construct a normalized object
+  if (!response.data || Object.keys(response.data).length === 0) {
+    return normalize({ id, ...bookData });
+  }
+  return normalize(response.data);
 };
 
 export const deleteBook = async (id) => {

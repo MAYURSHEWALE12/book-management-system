@@ -31,7 +31,7 @@ A modern, full-featured **Book Management System** built with React + Vite. Mana
 | Forms | React Hook Form |
 | HTTP | Axios |
 | Notifications | React Hot Toast |
-| API | CrudCrud.com (hosted mock REST API) |
+| API | MockAPI.io (hosted mock REST API) |
 | Styling | Vanilla CSS (clean editorial light theme) |
 | Fonts | Google Fonts (Inter + Playfair Display) |
 | Deployment | Vercel |
@@ -66,9 +66,9 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 🌐 API — CrudCrud.com
+## 🌐 API — MockAPI.io
 
-This project uses [CrudCrud.com](https://crudcrud.com) as a hosted mock REST API.
+This project uses [MockAPI.io](https://mockapi.io) as a hosted mock REST API.
 
 **Base URL**: `https://6a14429e6c7db8aac0542924.mockapi.io`
 
