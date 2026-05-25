@@ -141,8 +141,3 @@ npm run build    # Build for production
 npm run preview  # Preview production build locally
 ```
 
----
-
-## 📄 License
-
-MIT
