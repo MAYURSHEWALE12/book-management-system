@@ -25,6 +25,7 @@ dist-ssr
 
 # Environment files (keep .env.example if you have one)
 .env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
