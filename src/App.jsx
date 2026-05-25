@@ -15,15 +15,15 @@ export default function App() {
         position="top-right"
         toastOptions={{
           style: {
-            background: "rgba(15, 23, 42, 0.95)",
-            color: "#e2e8f0",
-            border: "1px solid rgba(99,102,241,0.3)",
-            borderRadius: "12px",
-            backdropFilter: "blur(10px)",
+            background: "#ffffff",
+            color: "#1c1917",
+            border: "1.5px solid #e7e5e0",
+            borderRadius: "8px",
             fontSize: "0.875rem",
+            boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
           },
-          success: { iconTheme: { primary: "#4ade80", secondary: "#0f172a" } },
-          error: { iconTheme: { primary: "#f87171", secondary: "#0f172a" } },
+          success: { iconTheme: { primary: "#16a34a", secondary: "#fff" } },
+          error: { iconTheme: { primary: "#dc2626", secondary: "#fff" } },
         }}
       />
     </BooksProvider>
