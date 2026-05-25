@@ -9,7 +9,7 @@ export default function Navbar() {
           <span className="navbar-title">BookShelf</span>
           <span className="navbar-badge">Manager</span>
         </div>
-        <div className="navbar-tagline">Your personal library, reimagined.</div>
+        <div className="navbar-tagline">Your personal library.</div>
       </div>
     </nav>
   );
